@@ -5,10 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <script src="js/jquery.js"></script>
 </head>
 <body>
-    <div id="nav"><icon>☰</icon><name>MSMedia</name></div>
+    <div id="nav"><i class="fa fa-bars"></i><name>MSMedia</name></div>
     <div id="side"></div>
-    <div id="main"></div>
+    <div id="main">
+        <black></black>
+        <div class="select">
+            <input type="file" id="file" />
+            <label for="file">
+                <i class="fa fa-file"></i>
+                <br>
+                <l>Choose a file<l>
+            </label>
+        </div>
+        <div class="select">
+            <input type="file" id="folder" webkitdirectory directory multiple/>
+            <label for="folder">
+                <i class="fa fa-folder-open"></i>
+                <br>
+                <l>Choose a folder<l>
+            </label>
+        </div>
+    </div>
+    <script src="js/bar.js"></script>
 </body>
 </html>

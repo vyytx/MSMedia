@@ -1,1 +1,127 @@
-body,html{width:100%;height:100%;margin:0 auto}body{background-color:#f1f1f1;color:#333;text-align:center;padding:0px!important}body *{color:#333;font-family:Arial,sans-serif,"Microsoft JhengHei";user-select:none}h1{font-weight:400;font-size:60px;top:20px;position:relative;margin:0}button{background-color:#e9e9e9;color:#333;width:88px;height:64px;font-size:16px;margin:4px 4px;padding:2px 2px;border:#e4e4e4 solid 2px;border-radius:5px;cursor:pointer;transition:.3s background-color;outline:0px}button:focus,button:hover{background-color:#e4e4e4}button.prime{color:#f8f8f8;background-color:#37b;border:#2973b8 solid 2px}button.prime *{color:#f8f8f8}button.prime:hover{background-color:#2973b8}button *{color:#333;text-decoration:none}.input{width:80%;height:64px;position:relative;left:10%}.input label{width:20%;display:inline-block;font-size:20px}.input input,.input select{box-sizing:border-box;width:calc(80% - 16px);height:48px;padding:8px;margin:0;border:1px transparent solid;transition:.3s border-color;outline:0px;background-color:#fff}.input input:focus,.input input:hover,.input select:focus,.input select:hover{border-color:#00bfff}.input2{width:80%;height:64px;position:relative;left:10%}.input2 label{width:20%;display:inline-block;font-size:20px}.input2 input,.input2 select{box-sizing:border-box;width:calc(40% - 14px);height:48px;padding:8px;margin:0;border:1px transparent solid;transition:.3s border-color;outline:0px}.input2 input:focus,.input2 input:hover,.input2 select:focus,.input2 select:hover{border-color:#00bfff}.input2 sep{display:inline-block;position:relative;text-align:center;width:12px;height:48px}.swal2-container{padding:0px!important}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0 0;
+    background-color: #111111;
+    color: #f8f8f8;
+    font-family: Microsoft YaHei,Helvetica,sans-serif;
+}
+
+.fa {
+    font-weight: 400 !important;
+}
+
+#nav {
+    width: 100%;
+    background-color: #222222;
+}
+
+#nav > i, #nav > i:before {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+}
+
+#side {
+    position: fixed;
+    background-color: #ffffff;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 100%;
+    transition: width 0.5s;
+    z-index: 10;
+}
+
+#side > .bar, #side > .bar > a {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #333333;
+    overflow-x: hidden;
+    z-index: 11;
+}
+
+#main {
+    text-align: center;
+}
+
+black {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f088;
+    z-index: 9;
+}
+
+.select {
+    display: inline-block;
+    color: white;
+    background-color: #000000;
+    border: dashed #f0f0f0 2px;
+}
+
+.select > label {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.select > label > i {
+    font-size: 64px;
+    position: relative;
+    top: 45%;
+    transform: translateY(-50%);
+}
+
+.select > label > l {
+    position: relative;
+    top: 45%;
+}
+
+.select > input {
+	width: 0px;
+	height: 0px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+@media only screen and (max-width: 500px) {
+
+    #nav {
+        height: 64px;
+    }
+
+    #nav > i, #nav > i:before {
+        width: 64px;
+        height: 64px;
+        font-size: 48px;
+    }
+
+    #nav > name {
+        width: calc(100% - 64px);
+        height: 64px;
+        font-size: 48px;
+    }
+
+    #side > .bar, #side > .bar > a {
+        height: 64px;
+        font-size: 48px;
+    }
+
+    #main {
+        width: 100%;
+        height: calc(100% - 64px);
+    }
+
+    .select {
+        width: calc(100% - 4px);
+        height: calc(50% - 4px);
+    }
+
+}
